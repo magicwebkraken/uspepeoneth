@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>USPEPE</title>
+    <meta charset="UTF-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <style>
+      body {
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.2s ease 0.2s, visibility 0.2s ease 0.2s;
+      }
+
+      .loaded body {
+        opacity: 1;
+        visibility: visible;
+      }
+    </style>
+    <link rel="stylesheet" href="css/style.min.css?_v=20240806224551" />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <div class="menu-open-bg"></div>
+      <header class="header">
+        <div class="header__container">
+          <a href="../" class="header__logo"
+            ><img src="img/logo.png" alt="Logo"
+          /></a>
+          <div class="header__right">
+            <div class="header__menu menu">
+              <button type="button" class="menu__icon icon-menu">
+                <span></span>
+              </button>
+              <nav class="menu__body">
+                <ul class="menu__list">
+                  <li class="menu__item">
+                    <a href="#" data-goto=".about" class="menu__link">ABOUT</a>
+                  </li>
+                  <li class="menu__item">
+                    <a href="#" data-goto=".how" class="menu__link"
+                      >HOW TO BUY?</a
+                    >
+                  </li> 
+                  <li class="menu__item">
+                    <a href="#" data-goto=".roadmap" class="menu__link"
+                      >Roadmap</a
+                    >
+                  </li>
+                  <li class="menu__item">
+                    <a
+                      href="#"
+                      data-goto=".tokenomics"
+                      data-goto-top="60"
+                      class="menu__link"
+                      >TOKENOMICS</a
+                    >
+                  </li>
+                </ul>
+              </nav> 
+            </div>
+            <div class="header__actions" data-da=".menu__body, 991.98">
+              <div class="header__social">
+                <a href="https://x.com/USPepe_token" class="header__social-item">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="28"
+                    height="24"
+                    viewBox="0 0 28 24"
+                    fill="none"
+                  >
+                    <path
+                      d="M21.7549 0L25.8327 0L16.9235 10.1673L27.4051 24H19.1985L12.7715 15.6095L5.41584 24H1.33579L10.8655 13.1246L0.810547 0.0011064L9.22552 0.0011064L15.0353 7.67031L21.7549 0ZM20.3243 21.5638H22.5838L7.99774 2.30895H5.5732L20.3243 21.5638Z"
+                      fill="white"
+                    />
+                  </svg>
+                </a>
+                <a href="https://t.me/USPepe_token" class="header__social-item">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="29"
+                    height="24"
+                    viewBox="0 0 29 24"
+                    fill="none"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M25.7596 0.164191C26.1025 0.0188087 26.4779 -0.0313328 26.8466 0.0189852C27.2153 0.0693032 27.5639 0.218242 27.856 0.450298C28.1482 0.682355 28.3733 0.989046 28.5078 1.33845C28.6424 1.68785 28.6815 2.0672 28.6211 2.437L25.4737 21.6664C25.1684 23.5212 23.1479 24.585 21.459 23.661C20.0463 22.888 17.948 21.6971 16.0607 20.4545C15.117 19.8325 12.2264 17.8406 12.5816 16.4233C12.8869 15.2114 17.744 10.6574 20.5195 7.94988C21.6089 6.88616 21.1121 6.27253 19.8256 7.25098C16.631 9.68034 11.502 13.3747 9.80614 14.4147C8.31015 15.3316 7.53024 15.4882 6.59768 15.3316C4.89631 15.0465 3.31845 14.6048 2.03063 14.0666C0.2904 13.3398 0.375052 10.93 2.02924 10.2283L25.7596 0.164191Z"
+                      fill="white"
+                    />
+                  </svg>
+                </a>
+              </div>
+              <a href="https://app.uniswap.org/#/swap?inputCurrency=eth&outputCurrency=0x2982a74045a5db6e5e4222b5847ee17d308f9f5c" class="header__button">
+                <span>Buy now </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main class="page">
+        <section class="page__hero hero">
+          <div class="hero__body">
+            <div class="hero__content pl-func">
+              <h1 class="hero__title">
+                <img src="img/hero/title.png" alt="Image" />
+              </h1>
+              <div class="hero__buttons">
+                <a href="https://app.uniswap.org/#/swap?inputCurrency=eth&outputCurrency=0x2982a74045a5db6e5e4222b5847ee17d308f9f5c" class="hero__button">
+                  <img src="img/hero/btn.png" alt="Button" />
+                </a>
+                <div class="hero__social">
+                  <a href="https://x.com/USPepe_token" class="hero__social-item">
+                    <img src="img/hero/x.png" alt="X" />
+                  </a>
+                  <a href="https://t.me/USPepe_token" class="hero__social-item">
+                    <img src="img/hero/tel.png" alt="Tel" />
+                  </a>
+                  <a href="https://www.coingecko.com/en/coins/uspepe" class="hero__social-item">
+                    <img src="img/hero/coingecko.png" alt="Tel" />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="hero__image">
+              <img src="img/hero/hero.png" alt="Image" />
+            </div>
+          </div>
+        </section>
+        <section class="page__about about" data-watch="navigator">
+          <div class="about__top"></div>
+          <div
+            class="about__container"
+            data-watch-threshold="0.6"
+            data-watch-once
+            data-watch
+          >
+            <div
+              class="about__content"
+              data-watch-threshold="0.5"
+              data-watch-once
+              data-watch
+            >
+              <h3 class="about__sub-title">
+                <img src="img/about/sub-title.png" alt="$USPEPE" />
+              </h3>
+              <div class="about__text">
+                <p>
+                  $USPEPE<br/><br/>
+                  Born in Trump’s secret lab, $USPEPE combines the viral power of PEPE with the innovation of the Ethereum blockchain.
+                </p>
+              </div>
+              <a href="https://app.uniswap.org/#/swap?inputCurrency=eth&outputCurrency=0x2982a74045a5db6e5e4222b5847ee17d308f9f5c" class="about__button">
+                <img src="img/about/btn.png" alt="BUY NOW" />
+              </a>
+            </div>
+            <div
+              class="about__images"
+              data-watch-threshold="0.7"
+              data-watch-once
+              data-watch
+            >
+              <h2 class="about__title">
+                <img src="img/about/title.png" alt="ABOUT" />
+              </h2>
+              <div class="about__image">
+                <img src="img/about/about.png" alt="Image" />
+              </div>
+            </div>
+          </div>
+          <div class="about__bottom"></div>
+        </section>
+        <section class="page__how how" data-watch="navigator">
+          <div class="how__container">
+            <div class="how__items">
+              <div
+                class="how__item"
+                data-watch-threshold="0.6"
+                data-watch-once
+                data-watch
+              >
+                <p>
+                  $USPEPE combines the global meme power of PEPE with the speed and innovation of the Ethereum blockchain. A powerful mix set to create a strong and loyal community.
+                </p>
+              </div>
+              <div
+                class="how__item"
+                data-watch-threshold="0.6"
+                data-watch-once
+                data-watch
+              >
+                <p>
+                  With Donald Trump publicly supporting Ethereum, the spotlight is shifting towards this blockchain. $USPEPE is perfectly positioned to ride this growing wave of attention and liquidity.
+                </p>
+              </div>
+              <div
+                class="how__item"
+                data-watch-threshold="0.6"
+                data-watch-once
+                data-watch
+              >
+                <p>
+                  The $USPEPE presale offers the chance to join a rising movement at an early stage — just as interest in Ethereum and new projects is rapidly increasing.
+                </p>
+              </div>
+              <div
+                class="how__item"
+                data-watch-threshold="0.6"
+                data-watch-once
+                data-watch
+              >
+                <p>
+                  $USPEPE thrives on viral growth, meme culture, and a passionate community. Early supporters become part of a unique crypto phenomenon on one of the most exciting blockchains of the future.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="page__roadmap roadmap" data-watch="navigator">
+          <div class="roadmap__container">
+            <h2 class="roadmap__title">
+              <img src="img/roadmap/title.png" alt="ROADMAP" />
+            </h2>
+            <div class="roadmap__items">
+              <div
+                class="roadmap__item"
+                data-watch-threshold="0.6"
+                data-watch-once
+                data-watch
+              >
+                <div class="roadmap__item-number">1</div>
+                <div class="roadmap__item-text">
+                  The journey begins! We’re kicking things off with an intense community-building effort. We’ll unite meme enthusiasts, crypto lovers, and $USPEPE supporters around the world. At the same time, the presale of $USPEPE will be live, giving early adopters a chance to join the movement before it goes mainstream. Get ready to be part of something BIG!
+                </div>
+              </div>
+              <div
+                class="roadmap__item"
+                data-watch-threshold="0.6"
+                data-watch-once
+                data-watch
+              >
+                <div class="roadmap__item-number">2</div>
+                <div class="roadmap__item-text">
+                  As we build momentum, we’ll amplify our reach by connecting with top-tier influencers and expanding our community across multiple platforms. With more eyes on $USPEPE, we’ll ensure that the project continues to grow and get the attention it deserves. The buzz will be real, and you’ll be right at the center of it.
+                </div>
+              </div>
+              <div
+                class="roadmap__item"
+                data-watch-threshold="0.6"
+                data-watch-once
+                data-watch
+              >
+                <div class="roadmap__item-number">3</div>
+                <div class="roadmap__item-text">
+                  The next big milestone is launching $USPEPE on Uniswap – a Exchange that aligns with our mission of growth and innovation. This will provide the perfect environment for our project to thrive and gain even more exposure in the DeFi world. Watch as $USPEPE enters its next phase of growth!
+                </div>
+              </div>
+              <div
+                class="roadmap__item"
+                data-watch-threshold="0.6"
+                data-watch-once
+                data-watch
+              >
+                <div class="roadmap__item-number">4</div>
+                <div class="roadmap__item-text">
+                  We aim to bring $USPEPE to larger exchanges and make it accessible to a global audience. This is where the real momentum begins as $USPEPE gains recognition in the broader crypto space. Together, we’ll push this project to new heights!
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="page__tokenomics tokenomics" data-watch="navigator">
+          <div class="tokenomics__top"></div>
+          <div class="tokenomics__body">
+            <div class="tokenomics__image">
+              <img src="img/tokenomics/tokenomics.png" alt="Image" />
+            </div>
+            <div class="tokenomics__content pr-func">
+              <h2 class="tokenomics__title">
+                <img src="img/tokenomics/title.png" alt="TOKENOMICS" />
+              </h2>
+              <div
+                class="tokenomics__items"
+                data-watch-threshold="0.6"
+                data-watch-once
+                data-watch
+              >
+                <div
+                  class="tokenomics__row"
+                  data-watch-threshold="0.7"
+                  data-watch-once
+                  data-watch
+                >
+                  <div class="tokenomics__item">
+                    <img src="img/tokenomics/10m.png" alt="BUY/SELL TAX 0/0" />
+                  </div>
+                  <div class="tokenomics__item">
+                    <img src="img/tokenomics/lp.png" alt="BUY/SELL TAX 0/0" />
+                  </div>
+                </div>
+                <div
+                  class="tokenomics__row"
+                  data-watch-threshold="0.7"
+                  data-watch-once
+                  data-watch
+                >
+                  <div class="tokenomics__item">
+                    <img src="img/tokenomics/tok.png" alt="BUY/SELL TAX 0/0" />
+                  </div>
+                </div>
+                <div
+                  class="tokenomics__row"
+                  data-watch-threshold="0.7"
+                  data-watch-once
+                  data-watch
+                >
+                  <div class="tokenomics__item">
+                    <img src="img/tokenomics/ca.png" alt="BUY/SELL TAX 0/0" />
+                  </div>
+                  <button class="tokenomics__copy copy-ca-btn">
+                    <img src="img/tokenomics/copy.png" alt="Copy" />
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tokenomics__bottom"></div>
+        </section>
+        <section class="page__join join">
+          <div class="join__container">
+            <h2 class="join__title">
+              <img src="img/join/image.png" alt="JOIN US" />
+            </h2>
+            <div
+              class="join__actions"
+              data-watch-threshold="0.8"
+              data-watch-once
+              data-watch
+            >
+              <a href="https://app.uniswap.org/#/swap?inputCurrency=eth&outputCurrency=0x2982a74045a5db6e5e4222b5847ee17d308f9f5c" class="join__button">
+                <img src="img/join/btn.png" alt="BUY NOW" />
+              </a>
+              <div class="join__social">
+                <a href="https://x.com/USPepe_token" class="join__social-item">
+                  <img src="img/join/x.png" alt="X" />
+                </a>
+                <a href="https://t.me/USPepe_token" class="join__social-item">
+                  <img src="img/join/tel.png" alt="Telegram" />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="join__bottom"></div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="footer__top">
+          <div class="footer__container">
+            <div class="footer__top-body">
+              <div class="footer__top-menu">
+                <div class="footer__top-column">
+                  <a href="#" data-goto=".about" class="footer__top-item"
+                    >ABOUT</a
+                  >
+                  <a href="#" data-goto=".how" class="footer__top-item"
+                    >HOW TO BUY?</a
+                  >
+                </div>
+                <div class="footer__top-column">
+                  <a href="#" data-goto=".roadmap" class="footer__top-item"
+                    >Roadmap</a
+                  >
+                  <a
+                    href="#"
+                    data-goto=".tokenomics"
+                    data-goto-top="60"
+                    class="footer__top-item"
+                    >TOKENOMICS</a
+                  >
+                </div>
+              </div>
+              <div class="footer__top-social">
+                <h2 class="footer__top-social-title">Social & more</h2>
+                <div class="footer__top-social-items">
+                  <a href="https://dexscreener.com/ethereum/0x2982a74045a5db6e5e4222b5847ee17d308f9f5c" class="footer__top-social-item">
+                    <img src="/img/dexscreener.png" alt="Logo" />
+                  </a>
+                  <a href="https://www.dextools.io/app/en/ether/pair-explorer/0x2982a74045a5db6e5e4222b5847ee17d308f9f5c" class="footer__top-social-item">
+                    <img src="/img/dextools.png" alt="Logo" />
+                  </a>
+                  <a href="https://www.coingecko.com/en/coins/uspepe" class="footer__top-social-item">
+                    <img src="/img/coingecko.png" alt="Logo" />
+                  </a>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <div class="footer__container">
+            <div class="footer__bottom-body">
+              <div class="footer__bottom-left">2026 © ALL RIGHTS RESERVED</div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="js/app.min.js?_v=20240806224551"></script>
+    <script src="js/demo.js"></script>
+  </body>
+</html>
